@@ -1,0 +1,31 @@
+#github_logo {
+	margin-top: 10px;
+	padding-rigth: 5px;
+}
+
+#linkedin_logo {
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+#text_aligned {
+	text-align: justify;
+	max-width: 70%;
+}
+
+#perfile_image {
+	align: right;
+
+}
+
+#about_me {
+	text-align: justify;
+}
+
+#motorcheck_text {
+	margin-rigth: -50px;
+}
+
+#about_text {
+	text-align: justify;
+}

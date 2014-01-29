@@ -29,3 +29,7 @@
 #about_text {
 	text-align: justify;
 }
+
+.jumbotron {
+	background-color: #CDE4FF !important;
+}

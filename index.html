@@ -42,13 +42,15 @@
           <ul class="nav navbar-nav">
             <li class="active" id='home'><a>Home</a></li>
             <li id='experience'><a href="#experience">Experience</a></li>
-            <li id='about'><a href="#about">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li id='about'><a href="#about">About Javier</a></li>
+            <li id='portfolio'><a href="#portfolio"> Check My Portfolio</a></li>
+            <li id='contact'><a href="#contact">Get in Touch</a></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <a id='github_logo' href='https://github.com/javiros' ><image src='images/github.jpg' alt='Github'></li></a>
-            <a id='linkedin_logo' href='http://www.linkedin.com/in/javierrossetti'><image src='images/linkedin.jpg' alt='Linkedin'></a>
+          <ul class="nav navbar-nav navbar-right" id='nav-media-logos' >
+            <a id='' href='http://stackoverflow.com/users/1898993/jax700303' ><image src='images/stackoverflow.jpg' alt='Stackoverflow'></li></a>
+            <a id='' href='https://github.com/javiros' ><image src='images/github.jpg' alt='Github'></li></a>
+            <a id='' href='http://www.linkedin.com/in/javierrossetti'><image src='images/linkedin.jpg' alt='Linkedin'></a>
+            <li class='pull-right' id='beta'>Beta</li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -65,7 +67,7 @@
           </div>
           <div id='text_aligned'>
             <p>Hi there! Thank you for visiting my site, my name is Javier Rossetti and am junior web developer passionate about Ruby On Rails!</p>
-            <p>Here you'll find information about, from work experience to my portfolio, also if you'd like' to get in touch, please use the form on my contact page or hit the linkedin link at the top.</p>
+            <p>Here you'll find information about me, from work experience to my portfolio, also if you'd like to get in touch, please use the form on my contact page or hit the linkedin link at the top.</p>
             <p>I have been developing ROR applications for over a year now and I just can't have enouth of it! I like to experiment with different techonologies as well, some of my favorite ones are: AJAX, JQuery, MySQL, HTML5 and CSS3</p>
             <p>If you are looking for a junior developer, get in contact and I may even buy you coffee!</p>
           </div>
@@ -80,23 +82,23 @@
         <div class="col-md-4">
           <h2>Porftolio</h2>
           <p>Come on in and take a look at some of my ROR applications... </p>
-          <a href="portfolio.html" alt="Eurocanvas"><image src='images/eurocanvas.png' class="img-rounded" ></a>
+          <a href="#portfolio" alt="Eurocanvas"><image src='images/eurocanvas.png' class="img-rounded" id='myportfolio' ></a>
           <p></p>
-          <p><a class="btn btn-primary btn-xs" href="portfolio.html" role="button">More &raquo;</a></p>
+          <p id='my_portfolio' ><a class="btn btn-primary btn-xs" href="#portfolio" role="button">More &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Experience</h2>
           <p>I have been working with some cool companies, developing ROR apps and doing other bits... </p>
-          <a href="#experience" alt="Eurocanvas"><image src='images/weddings.jpg' href='#experience' class="img-rounded" ></a>
+          <a href="#experience" alt="Eurocanvas"><image src='images/weddings.jpg' id='myexperience' class="img-rounded" ></a>
           <p></p>
-          <p><a class="btn btn-primary btn-xs" href="#experience" role="button">More &raquo;</a></p>
+          <p id='my_experience'><a class="btn btn-primary btn-xs" href="#experience" role="button">More &raquo;</a></p>
        </div>
         <div class="col-md-4" id='about_me'>
           <h2>About Me</h2>
           <p>Having worked in different hospitality and retail management jobs, I decided to go back to my roots and learn more about IT and software development in general.</p><p> It has been an action packed couple of years but I have enjoyed every-minute-of-it!
             and between you and me I'm loving having the weekend free to spend time with my family...</p>
             <br/>
-          <p><a class="btn btn-primary btn-xs" href="#about" role="button">More &raquo;</a></p>
+          <p id='about_me'><a class="btn btn-primary btn-xs" href="#about" role="button">More &raquo;</a></p>
         </div>
       </div>
       <!-- Experience begins -->
@@ -106,7 +108,7 @@
           <h1>
             Experience
             <p>
-              <small>After finishing the Higher Diploma of Science in Web Technologies at NCI I completed 2 Internships developing Ruby on Rails applications:
+              <small>After finishing the Higher Diploma of Science in Web Technologies at NCI I completed 2 Internships developing Ruby on Rails applications
               </small>
             </p>
           </h1>
@@ -130,7 +132,7 @@
           </div>
           <div class="col-md-7" id='text_aligned'>
             <h2 class="featurette-heading">Junior Ruby on Rails Developer <small>(Intern)</small><p><span class="text-muted"> Motorcheck.ie</span><p></h2>
-            <p class="lead">Worked in the development of an E-commerce application (yet to go live). I worked with large volume of products, developing a fully operational shopping cart including some cool gems such as: Devise, Stripe, Bootstrap for rails, JQuery for rails and more.</p>
+            <p class="lead">Worked as part of a team developing 2 apps, an internal billing system and an external vehicle data cleansing application, with large volume of data and complex SQL queries, the application generated a CSV file matching customer needs. </p>
           </div>
         </div>
 
@@ -151,23 +153,94 @@
       <!-- /end of Experience -->
       <!-- About -->
       <div class="jumbotron" id='about_text'>
-        <a name="about"></a>
-        <div class='page-header'>
-          <h2>About Me</h2>
-        </div>
-        <p>I finished secondary school with a diploma in electronics, back in those days I sued to spend a lot of time won my Commodore 64 typing away code to create games and small databases; however my desire to travel lead me to study Hospitality Management in College. This allowed me to travel the world and to meet really cool people, but I always kept an eye on techy stuff!
-        </p>
-        <p>After spending over 12 years in the hospitality industry and working in some of the most exclusive hotels in Ireland and overseas I moved into retail as Store manager, spending over 6 years with a FMCG discount retailer. This gave me a great overview of the business in general, from staff management to budgeting and stock control.
-         Both these jobs taught me a lot about team work, looking after the customer (internal and external) and the real need for training and developing staff.</p>
-        <p>Two years ago, now with a family to look after, I decided to return to my roots and enrolled myself in the H. Dip in Web Tech and did quite well out of it. The course was very intensive and challenging but I enjoyed every minute of it and finished with a 1.1 overall grade.</p>
-        <p>Now I am actively looking for a junior software developer position, preferably in Ruby on Rails and looking forward to working with senior developers from whom I can learn from, but also love a challenge and having my own feature to develop would be great!</p>
-        <p>
-          <br/>
-          <a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact Me &raquo;</a>
-        </p>
+          <a name="about"></a>
+          <div class='page-header'>
+            <h2>About Me</h2>
+          </div>
+          <p>I finished secondary school with a diploma in electronics, back in those days I used to spend a lot of time on my Commodore 64 typing away code to create games and small databases; however my desire to travel lead me to study Hospitality Management in College. This allowed me to travel the world and to meet really cool people, but I always kept an eye on techy stuff!
+          </p>
+          <p>After spending over 12 years in the hospitality industry and working in some of the most exclusive hotels in Ireland and overseas I moved into retail as Store manager, spending over 6 years with a FMCG discount retailer. This gave me a great overview of the business in general, from staff management to budgeting and stock control.
+           Both these jobs taught me a lot about team work, looking after the customer (internal and external) and the real need for training and developing staff.</p>
+          <p>Two years ago, now with a family to look after, I decided to return to my roots and enrolled myself in the H. Dip in Web Tech and did quite well out of it. The course was very intensive and challenging but I enjoyed every minute of it and finished with a 1.1 overall grade.</p>
+          <p>Now I am actively looking for a junior software developer position, preferably in Ruby on Rails and looking forward to working with senior developers from whom I can learn from, but also love a challenge and having my own feature to develop would be great!</p>
+          <p id='button_contact'>
+            <br/>
+            <a class="btn btn-lg btn-primary" href="#contact" role="button">Contact Me &raquo;</a>
+          </p>
       </div>
+      <a name='portfolio'></a><br/>
+        <div class="page-header">
+          <h1>
+            Portfolio
+            <p>
+              <small>Here are some samples of my work, feel free to click through and play with the apps, all my apps are hosted in Heroku, with the exception of 2 that are hosted on local company servers (more coming soon!)
+              </small>
+            </p>
+          </h1>
+        </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+          <div class="col-md-6">
+            <h2>Rossetti Coffee <small>E-Commerce</small></h2>
+            <a class='wrapper' href="http://desolate-taiga-2759.herokuapp.com/" alt="Rossetti Coffee"><span class='pic_text'>My first ROR app, yup pretty much a mix of tutorials and my own code!</span><image src='images/rossetti_coffee.png' id='rossetti_coffee' class="img-rounded" ></a><p></p>
+            <a class="btn btn-default" href="http://desolate-taiga-2759.herokuapp.com/" role="button">Go to app &raquo;</a></p>
+          </div>
+          <div class="col-md-6">
+            <h2>PostgradsIRL <small>Repository of Postgrad courses</small></h2>
+            <a class='wrapper' href="http://morning-taiga-5297.herokuapp.com/" alt="PostgradsIRL "><span class='pic_text'>Uses some cool gems such as Devise & gmapsforails</span><image src='images/postgrads.png' id='postgrads' class="img-rounded" ></a><p></p>
+            <a class="btn btn-default" href="http://morning-taiga-5297.herokuapp.com/" role="button">Go to app &raquo;</a></p>
+         </div>
+       </div>
+       <div class='row'>   
+          <div class="col-md-6">
+            <h2>Eurocanvas <small>E-Commerce</small></h2>
+            <a class='wrapper' href="http://eurocanvas.herokuapp.com/" alt="Eurocanvas"><span class='pic_text'>Done during my Internship @ weddingsonline, still to go live...</span><image src='images/canvas.png' id='eurocanvas' class="img-rounded" ></a><p></p>
+            <a class="btn btn-default" href="http://eurocanvas.herokuapp.com/" role="button">Go to app &raquo;</a></p>
+         </div>
+          <div class="col-md-6">
+            <div class="col-md-6">
+            <h2>Deborah'sCakes</h2>
+            <a class='wrapper' href="" alt="Deborah'sCakes"><span class='pic_text'><image src='images/admin_panel.png' id='eurocanvas' class="img-rounded" ></span><image src='images/cakes.png' id='cakes' class="img-rounded" ></a><p></p>
+            <p><em>This app is a work in progress, will be live pretty soon!</em></p>
+         </div>
+          </div>
+      </div><br />
       <!-- /end About -->
+      <div class="jumbotron">
+        <div id='contact_form'>
+          <a name="contact"></a>
+          <div class='page-header'>
+            <h2>Get in Touch</h2><small>wether you are looking for a junior web developer, a Ruby on Rails developer or just to have a chat...</small>
+          </div>
+          <form action="MAILTO:javier_rossetti1972@hotmail.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <input type="text" name='name' class="form-control" id="name1" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <input type="email" name='email' class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <textarea name='comment' class="form-control" rows="3" placeholder='Your Comment'></textarea>
+              </div>  
+              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="reset" class="btn btn-default">Reset</button>
+          </form>
+        </div>
+      </div>
       <footer>
+        <blockquote>
+          <p id='blockquote_text'>Connect</p>
+          <p id='blockquote_text'>086.3922735</p>
+          <p id='blockquote_text'>javier_rossetti1972@hotmail.com</p>
+        </blockquote>
+        <ul class="pull-left" id='media-logos'>
+            <a id='github_logo' href='http://stackoverflow.com/users/1898993/jax700303' ><image src='images/stackoverflow.jpg' alt='Stackoverflow'></li></a>
+            <a id='github_logo' href='https://github.com/javiros' ><image src='images/github.jpg' alt='Github'></li></a>
+            <a id='linkedin_logo' href='http://www.linkedin.com/in/javierrossetti'><image src='images/linkedin.jpg' alt='Linkedin'></a>
+        </ul>
         <p class='pull-right'>&copy; Javier Rossetti 2014</p>
       </footer>
     </div> <!-- /container -->

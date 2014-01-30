@@ -33,3 +33,62 @@
 .jumbotron {
 	background-color: #CDE4FF !important;
 }
+
+#beta {
+	text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+        color: #9c8468;
+        opacity: 0.3;
+        font: 30px 'LeagueGothicRegular';
+        margin-top: -22%;
+        padding-left: 10%;
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width:100px;
+    display:block;
+}
+.pic_text {
+    position: absolute;
+    top: 0;
+    color:#000;
+    background-color:rgba(255,255,255,0.8);
+    width: 500px;
+    height: 242px;
+    line-height:100px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.pic_text:hover {
+    opacity:1;
+}
+}
+
+img {
+    z-index:1;
+}
+
+#contact_form {
+	max-width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+	text-align: center;
+}
+
+#media-logos {
+	padding-bottom: 10px;
+}
+
+#nav-media-logos {
+	padding-top: 10px !important;
+}
+
+#blockquote_text {
+	font-size: 10px !important;
+}
